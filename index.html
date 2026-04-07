@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,9 +40,6 @@
       background: #16a34a;
       transform: scale(1.1) translateY(-4px);
     }
-    nav a:hover {
-      background: #16a34a;
-    }
     section {
       padding: 20px;
     }
@@ -66,23 +64,53 @@
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
     }
+    /* Formulário */
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #4ade80;
+      color: #065f46;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #16a34a;
+      color: #f0fdf4;
+    }
   </style>
 </head>
-<body><header>
+<body>
+<header>
   <h1>🌱 EcoKids</h1>
   <p>Evento sustentável para crianças</p>
-</header><nav>
+</header>
+
+<nav>
   <a href="#sobre">Sobre</a>
   <a href="#atividades">Atividades</a>
   <a href="#local">Local</a>
   <a href="#educadores">Educadores</a>
   <a href="#contato">Contato</a>
-</nav><section id="sobre">
+  <a href="#sugestoes">Sugestões</a>
+</nav>
+
+<section id="sobre">
   <h2>Sobre o Projeto</h2>
   <div class="card">
     <p>O EcoKids é um evento realizado na escola com o objetivo de ensinar crianças sobre sustentabilidade de forma divertida, com brincadeiras, jogos e atividades educativas.</p>
   </div>
-</section><section id="atividades">
+</section>
+
+<section id="atividades">
   <h2>Atividades</h2>
   <div class="card">♻️ Oficinas de reciclagem</div>
   <div class="card">🪢 Pula corda</div>
@@ -95,26 +123,54 @@
   <div class="card">🌪️ Oficina de cataventos</div>
   <div class="card">🎨 Artes com materiais reutilizados</div>
   <div class="card">🌍 Jogos educativos sobre o meio ambiente</div>
-</section><section id="local"></section><section id="educadores">
+</section>
+
+<section id="local"></section>
+
+<section id="educadores">
   <h2>Educadores</h2>
   <div class="card">👩‍🏫 Francisele Almeida<br><small>Professor orientador</small></div>
   <div class="card">👩‍🏫 Maria Aparecida<br><small>Diretora</small></div>
-</section><section id="contato">
+</section>
+
+<section id="contato">
   <h2>Local</h2>
   <div class="card">
     <p>📍 Local: Escola PEI Zulmira de Oliveira</p>
     <p>Endereço: R. Capão Bonito, 99 - Vl B Jesus, Itapeva - SP, 18400-690</p>
-  </div>  <h2>Contato</h2>
+  </div>
+
+  <h2>Contato</h2>
   <div class="card">
-        <p>Telefone: (15) 99716-1977</p>
+    <p>Telefone: (15) 99716-1977</p>
+    <p>📧 E-mail: <a href="mailto:francisele@prof.educacao.sp.gov.br">francisele@prof.educacao.sp.gov.br</a></p>
     <p><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png"> Instagram: <a href="https://instagram.com/peizulmira" target="_blank">@peizulmira</a></p>
     <p><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png"> Facebook: <a href="https://facebook.com/peizulmira" target="_blank">PEI Zulmira de Oliveira</a></p>
   </div>
-</section><footer>
+</section>
+
+<section id="sugestoes">
+  <h2>💡 Sugestões</h2>
+  <div class="card">
+    <form action="https://formsubmit.co/francisele@prof.educacao.sp.gov.br" method="POST" target="_blank">
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br>
+      
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua sugestão..." required></textarea><br>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<footer>
   <p>© 2026 EcoKids - Sustentabilidade para o futuro 🌎</p>
-</footer><!-- Botão flutuante WhatsApp --><a href="https://wa.me/5515997161977?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20EcoKids%20🌱" class="whatsapp" target="_blank">
-  💬
-</a><style>
+</footer>
+
+<!-- Botão flutuante WhatsApp -->
+<a href="https://wa.me/5515997161977?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20EcoKids%20🌱" class="whatsapp" target="_blank">💬</a>
+<style>
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -138,5 +194,6 @@
   width: 40px;
   height: 40px;
 }
-</style></body>
+</style>
+</body>
 </html>
